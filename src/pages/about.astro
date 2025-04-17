@@ -1,4 +1,8 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -22,6 +26,9 @@ const skills = [
 const happy = false;
 const finished = false;
 const goal = 3;
+
+const skillColor = "navy";
+const skillFontWeight = "bold";
 ---
 
 <html lang="en">
@@ -33,17 +40,25 @@ const goal = 3;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Header />
 		<h1>{pageTitle}</h1>
+		<style define:vars={{ skillColor, skillFontWeight }}>
+			h1 {
+				color: purple;
+				font-size: 4rem;
+			}
+			.skill {
+				color: var(--skillColor);
+				font-weight: var(--skillFontWeight);
+			}
+		</style>
         <h2>I'm a QA Engineer who is learning Astro</h2>
 		<p>My name is {identity.firstName} and I'm from {identity.country}.</p>
         <p> Also, I have a passion for coffee and this will help me to learn Astro</p>
 		<h3>Skills</h3>
 		<ul>
 			{skills.map((skill) => (
-				<li>{skill}</li>
+				<li class="skill">{skill}</li>
 			))}
 		</ul>
 		<h3>Hobbies</h3>
@@ -56,5 +71,6 @@ const goal = 3;
 		{happy ? <p>I'm happy</p> : <p>I'm not happy</p>}
 		{finished && <p>I'm finished</p>}
 		{goal === 3 ? <p>My goal is to finish the course in 3 days</p> : <p>I'm not sure about my goal</p>}
+		<Footer />
 	</body>
 </html>
