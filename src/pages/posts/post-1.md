@@ -1,19 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First Coffee Blog Post'
 pubDate: 2025-04-13
-description: 'This is the first post of my Coffee blog.'
+description: 'Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.'
 author: 'Daniel Anaya'
 image:
-    url: 'https://colombiancoffee.us/cdn/shop/articles/tips-to-recognize-good-quality-coffee-424970.png?v=1713377616&width=1024'
+    url: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg'
     alt: 'The Coffee Experience'
 tags: ['Astro','Coffee','Brewing']
 ---
-
-# My First Blog Post
-
-Published on: 2025-04-13
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I've accomplished
 

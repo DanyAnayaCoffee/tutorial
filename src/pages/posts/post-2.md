@@ -1,19 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My Second Coffee Blog Post'
 pubDate: 2025-04-14
-description: 'This is the first post of my Coffee blog.'
+description: 'This is the second post of my Coffee blog.'
 author: 'Daniel Anaya'
 image:
-    url: 'https://colombiancoffee.us/cdn/shop/articles/tips-to-recognize-good-quality-coffee-424970.png?v=1713377616&width=1024'
-    alt: 'The Coffee Experience'
+    url: 'https://images.squarespace-cdn.com/content/v1/584f6bbef5e23149e5522201/1724105912092-9EXMBE8GHDN65I483B49/SCA+Certificate+Programs+Social+Posts_Dev03.png?format=1500w'
+    alt: 'The Coffee Experience SCA'
 tags: ['Astro','Coffee','Brewing']
 ---
-
-# My Second Blog Post
-
-Published on: 2025-04-14
-
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I've accomplished
 
