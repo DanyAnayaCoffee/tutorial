@@ -1,9 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
+import SubscribeRSS from '../components/SubscribeRSS.astro';
 const pageTitle = "Home Page"
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<h2>This is a subtitle</h2>
 	<p>This is a paragraph</p>
+	<!--Hydrated component -->
+	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+	<SubscribeRSS/>
 </BaseLayout>
-
